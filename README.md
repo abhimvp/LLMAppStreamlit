@@ -28,11 +28,13 @@
 pip install -U langchain-google-genai
 pip install openai langchain pinecone-client tiktoken python-dotenv docx2txt pandas requests aiohttp PyYAML numpy # libraries in requirements.txt
 pip show langchain # to check whether langchain is installed in .ipynb
+pip install langchain_community # for SQLite Caching
 ```
 
 - Let's explore Langchain a bit - `langchain_deep_dive.ipynb` & then we create the APP in jupyter notebook first & then we will integrate the functions with frontend.
 - Setting up the environment: Langchain,Python-dotenv - add the required libraries in `requirements.txt` and install it in `.ipynb` file.
 - we will use [google-gemini](https://python.langchain.com/api_reference/google_genai/) as LLM Model we want to make use of & not GoogleVertexAI - [why?-Read this docs from langchain-google-providers](https://python.langchain.com/docs/integrations/providers/google/#chat-models) & ChatGoogleGenerativeAI - [APIReference](https://python.langchain.com/api_reference/google_genai/chat_models/langchain_google_genai.chat_models.ChatGoogleGenerativeAI.html)
+- Caching LLM Responses - [exampleReference](https://python.langchain.com/docs/how_to/llm_caching/)
 
 ### commands & Resources
 
