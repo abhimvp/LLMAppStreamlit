@@ -24,10 +24,15 @@
 
 ### Deep Dive Notes step by step
 
-#### commands & Resources
+### commands & Resources
 
 ```bash
 echo "# LLMAppStreamlit" >> README.md
+python -m venv env # create an env to install the libraries we need
+source env/Scripts/activate # activate the env
+# to deactivate - deactivate - simple
+pip install streamlit
+pip freeze>requirements.txt # we want to store what all libraries we installed in our project into this file time to time - run this command to update the requirements.txt
 ```
 
 **Resources :**
@@ -37,3 +42,34 @@ echo "# LLMAppStreamlit" >> README.md
 [Files for Section 1 (Streamlit Fundamentals)](https://drive.google.com/drive/folders/1BkdFVZ4pE4eAabkGz7SH0HK1cwDww8eJ)
 
 [Files for Section 2 (Building a Frontend for the LLM-powered Q&A App using Streamlit)](https://drive.google.com/drive/folders/1Ein0oHa-eAyLNC-dat73G6OC6SnPX6lJ?usp=sharing)
+
+#### [Streamlit](https://streamlit.io/#install) fundamentals
+
+- let's explore a bit about streamlit before building the app.
+- why we want to use streamlit? - [github-star-history](https://www.star-history.com/) - you can see how different libraries used for visualization have evolved over time.Streamlit has had an explosive [breakout](https://www.star-history.com/#streamlit/streamlit&Date) in the last few years.It's more geared towards machine learning and data science applications.
+
+[![Star History Chart](https://api.star-history.com/svg?repos=streamlit/streamlit&type=Date)](https://www.star-history.com/#streamlit/streamlit&Date)
+
+- created a python env to install necessary dependencies we may need.
+- Starting with `streamlit` & Validate the installation by running our Hello app:
+
+```bash
+
+(env)
+abhis@Tinku MINGW64 ~/Desktop/AIAgents/LLMAppStreamlit (main)
+$ streamlit hello
+
+  Welcome to Streamlit. Check out our demo in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.29.185:8501
+
+  Ready to create your own Python apps super quickly?
+  Head over to https://docs.streamlit.io
+
+  May you create awesome apps!
+
+```
+
+- we see following frontend on our browser @localURL: <http://localhost:8501>
+  ![alt text](Images/image.png)
