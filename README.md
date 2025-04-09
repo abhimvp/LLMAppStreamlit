@@ -93,3 +93,11 @@ $ streamlit run st_write.py # to display the file on screen
   - sidebar, columns, expander
 
 - Streamlit progress bar - can be used to indicate code is running to the user.
+- Streamlit session state - **st_session_state.py**
+  - When you create a Streamlit app and open it in your browser, that is what we refer to as a session.
+  - A session is a Python object that exists in memory for you to use between runs.
+  - A **session state** is a way to share variables between runs.
+  - How long does a session exist?
+    - The session object exists as long as the user keeps a browser tab open and the connection between the front-end and the back-end is active.
+    - Each time you open a new tab in the browser and go to your Streamlit app, a new session is created. These sessions are independent.
+    - A session is what happens in the browser & `state is how we capture that and store the current value of widgets & parameters to use later in the same session`
