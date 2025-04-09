@@ -89,4 +89,7 @@ $ streamlit run st_write.py # to display the file on screen
   - slider, file_uploader, camera_input, image
 
 - streamlit layout
+
   - sidebar, columns, expander
+
+- Streamlit progress bar - can be used to indicate code is running to the user.
