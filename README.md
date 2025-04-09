@@ -33,6 +33,7 @@ source env/Scripts/activate # activate the env
 # to deactivate - deactivate - simple
 pip install streamlit
 pip freeze>requirements.txt # we want to store what all libraries we installed in our project into this file time to time - run this command to update the requirements.txt
+pip install black # python formatter
 ```
 
 **Resources :**
@@ -73,3 +74,15 @@ $ streamlit hello
 
 - we see following frontend on our browser @localURL: <http://localhost:8501>
   ![alt text](Images/image.png)
+
+- Displaying data on the screen , [streamlit-emoji-short-codes](https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/) in **`st_write.py`** file
+
+```bash
+abhis@Tinku MINGW64 ~/Desktop/AIAgents/LLMAppStreamlit/st_fundamentals (main)
+$ streamlit run st_write.py # to display the file on screen
+```
+
+- Streamlit Widgets - **`st_widgets.py`**
+  - text_input, number_input, button
+  - checkbox, radio, select
+  - slider, file_uploader, camera_input, image
