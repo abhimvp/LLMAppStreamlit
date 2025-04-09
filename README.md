@@ -83,6 +83,10 @@ $ streamlit run st_write.py # to display the file on screen
 ```
 
 - Streamlit Widgets - **`st_widgets.py`**
+
   - text_input, number_input, button
   - checkbox, radio, select
   - slider, file_uploader, camera_input, image
+
+- streamlit layout
+  - sidebar, columns, expander
