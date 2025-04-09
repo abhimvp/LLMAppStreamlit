@@ -38,6 +38,7 @@ pip freeze>requirements.txt # do this whenever you've installed any new librarie
 - Caching LLM Responses - [exampleReference](https://python.langchain.com/docs/how_to/llm_caching/)
 - LLM Streaming, [Streaming](https://python.langchain.com/docs/concepts/streaming/) in Langchain
 - [prompt templates](https://python.langchain.com/docs/concepts/prompt_templates/)
+- Simple Chains & [Sequential Chains](https://python.langchain.com/docs/versions/migrating_chains/) - LangChain maintains a number of legacy abstractions. Many of these can be reimplemented via short combinations of LCEL and LangGraph primitives.
 
 ### commands & Resources
 
