@@ -22,7 +22,17 @@
 - **Example**: You take a document you want your language model to reference and slice it up into smaller chunks,store those chunks in a vector database as embeddings,which are numeric representations of text.These capabilities open up infinite no.of practical use cases.Now you can ask anything about the document(which may be 100 pages long) & the app will give the correct answer.Langchain implements abstraction like chains and agents so that a developer doesn't happen to know what happens under the hood.
   - Example use-cases: ChatBots, Questions Answering System, Summarization Tools.
 
-### Deep Dive Notes step by step
+### Deep Dive Notes on App step by step
+
+```bash
+pip install -U langchain-google-genai
+pip install openai langchain pinecone-client tiktoken python-dotenv docx2txt pandas requests aiohttp PyYAML numpy # libraries in requirements.txt
+pip show langchain # to check whether langchain is installed in .ipynb
+```
+
+- Let's explore Langchain a bit - `langchain_deep_dive.ipynb` & then we create the APP in jupyter notebook first & then we will integrate the functions with frontend.
+- Setting up the environment: Langchain,Python-dotenv - add the required libraries in `requirements.txt` and install it in `.ipynb` file.
+- we will use [google-gemini](https://python.langchain.com/api_reference/google_genai/) as LLM Model we want to make use of & not GoogleVertexAI - [why?-Read this docs from langchain-google-providers](https://python.langchain.com/docs/integrations/providers/google/#chat-models) & ChatGoogleGenerativeAI - [APIReference](https://python.langchain.com/api_reference/google_genai/chat_models/langchain_google_genai.chat_models.ChatGoogleGenerativeAI.html)
 
 ### commands & Resources
 
@@ -34,6 +44,7 @@ source env/Scripts/activate # activate the env
 pip install streamlit
 pip freeze>requirements.txt # we want to store what all libraries we installed in our project into this file time to time - run this command to update the requirements.txt
 pip install black # python formatter
+pip install jupyter # to work with jupyter notebooks in our env.
 ```
 
 **Resources :**

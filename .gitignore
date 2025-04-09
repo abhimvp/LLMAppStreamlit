@@ -2,6 +2,7 @@
 # Usually contains installed packages specific to the local setup
 venv/
 .venv/
+.env
 env/
 ENV/
 env.bak/
