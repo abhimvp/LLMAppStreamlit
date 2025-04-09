@@ -94,6 +94,7 @@ $ streamlit run st_write.py # to display the file on screen
 
 - Streamlit progress bar - can be used to indicate code is running to the user.
 - Streamlit session state - **st_session_state.py**
+
   - When you create a Streamlit app and open it in your browser, that is what we refer to as a session.
   - A session is a Python object that exists in memory for you to use between runs.
   - A **session state** is a way to share variables between runs.
@@ -101,3 +102,9 @@ $ streamlit run st_write.py # to display the file on screen
     - The session object exists as long as the user keeps a browser tab open and the connection between the front-end and the back-end is active.
     - Each time you open a new tab in the browser and go to your Streamlit app, a new session is created. These sessions are independent.
     - A session is what happens in the browser & `state is how we capture that and store the current value of widgets & parameters to use later in the same session`
+
+- Streamlit Callbacks
+  - A callback is a **function** that gets called when the **user interacts with a widget**.
+  - We use callbacks via **on_change or on_click** parameters of the widget.
+  - on_change and on_click parameters accept a function name as an input argument. This function is the callback.
+  - If you use on_change or on_click, when Streamlit detects a change in a widget state, it will run the function specified in the on_change or on_click parameters and then will rerun the script as usual.
