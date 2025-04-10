@@ -33,6 +33,7 @@ pip freeze>requirements.txt # do this whenever you've installed any new librarie
 pip install -U langchain_experimental
 pip install duckduckgo-search # Search for words, documents, images, news, maps and text translation using the DuckDuckGo.com search engine.
 pip install -q wikipedia
+pip install langchainhub
 ```
 
 - Let's explore Langchain a bit - `langchain_deep_dive.ipynb` & then we create the APP in jupyter notebook first & then we will integrate the functions with frontend.
@@ -43,6 +44,7 @@ pip install -q wikipedia
 - [prompt templates](https://python.langchain.com/docs/concepts/prompt_templates/)
 - Simple Chains & [Sequential Chains](https://python.langchain.com/docs/versions/migrating_chains/) - LangChain maintains a number of legacy abstractions. Many of these can be reimplemented via short combinations of LCEL and LangGraph primitives.
 - Langchain agents - Python REPL, duckduckgo & wikipedia
+- creating a reACT agent & test it.
 
 ### commands & Resources
 
