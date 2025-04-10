@@ -28,6 +28,7 @@ decorator==5.2.1
 defusedxml==0.7.1
 distro==1.9.0
 docx2txt==0.9
+duckduckgo_search==8.0.0
 executing==2.2.0
 fastjsonschema==2.21.1
 filetype==1.2.0
@@ -75,9 +76,11 @@ jupyterlab_widgets==3.0.13
 langchain==0.3.23
 langchain-community==0.3.21
 langchain-core==0.3.51
+langchain-experimental==0.3.4
 langchain-google-genai==2.1.2
 langchain-text-splitters==0.3.8
 langsmith==0.3.27
+lxml==5.3.2
 MarkupSafe==3.0.2
 marshmallow==3.26.1
 matplotlib-inline==0.1.7
@@ -104,6 +107,7 @@ pillow==11.1.0
 pinecone-client==6.0.0
 pinecone-plugin-interface==0.0.7
 platformdirs==4.3.7
+primp==0.14.0
 prometheus_client==0.21.1
 prompt_toolkit==3.0.50
 propcache==0.3.1
@@ -165,5 +169,6 @@ webcolors==24.11.1
 webencodings==0.5.1
 websocket-client==1.8.0
 widgetsnbextension==4.0.13
+wikipedia==1.4.0
 yarl==1.19.0
 zstandard==0.23.0

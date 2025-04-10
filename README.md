@@ -30,6 +30,9 @@ pip install openai langchain pinecone-client tiktoken python-dotenv docx2txt pan
 pip show langchain # to check whether langchain is installed in .ipynb
 pip install langchain_community # for SQLite Caching
 pip freeze>requirements.txt # do this whenever you've installed any new libraries , so that it updates the requirements.txt file
+pip install -U langchain_experimental
+pip install duckduckgo-search # Search for words, documents, images, news, maps and text translation using the DuckDuckGo.com search engine.
+pip install -q wikipedia
 ```
 
 - Let's explore Langchain a bit - `langchain_deep_dive.ipynb` & then we create the APP in jupyter notebook first & then we will integrate the functions with frontend.
@@ -39,6 +42,7 @@ pip freeze>requirements.txt # do this whenever you've installed any new librarie
 - LLM Streaming, [Streaming](https://python.langchain.com/docs/concepts/streaming/) in Langchain
 - [prompt templates](https://python.langchain.com/docs/concepts/prompt_templates/)
 - Simple Chains & [Sequential Chains](https://python.langchain.com/docs/versions/migrating_chains/) - LangChain maintains a number of legacy abstractions. Many of these can be reimplemented via short combinations of LCEL and LangGraph primitives.
+- Langchain agents - Python REPL, duckduckgo & wikipedia
 
 ### commands & Resources
 
