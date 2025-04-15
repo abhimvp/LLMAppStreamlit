@@ -46,6 +46,22 @@ pip install langchainhub
 - Langchain agents - Python REPL, duckduckgo & wikipedia
 - creating a reACT agent & test it.
 
+### LangChain and Vector Stores (Pinecone)
+
+- **Embeddings** are the core of building LLMs applications.Text embeddings are **numeric representations** of text and are used in NLP and ML tasks.
+- Text Embeddings can be used to measure the relatedness and similarity between two pieces of text.The distance between two embeddings or two vectors measures their relatedness which translates to the relatedness between the text concepts they represent.Similar embeddings or vectors represent similar concepts.
+- there are two common approaches to measuring relatedness and similarity btw text embeddings - cosine similarity and euclidean distance.
+
+- **Vector Databases**
+  - One of the biggest challenges of AI Applications is efficient data processing.Many of latest AI applications rely on vector embeddings.which as you know, means converting text to numbers that carry within themselves semantic information.vector embeddings are way of representing text as a set of numbers in a high-dimensional space, and the numbers represent the meanings of the words in the text.
+  - we need a database/data store specifically designed to manage such large quantities of data in a numeric representation.we will use pinecone vector db which is designed for storing and querying high dimensional vectors.it provides fast and efficient semantic search over these vector embeddings.
+  - Vector databases are a new type of database, designed to store and query unstructured data.Unstructured data is data that does not have a fixed schema, such as text, images, and audio.In vector databases, we apply a similarity metric to find a vector that is the most similar to our query.
+  - Vector databases use a combination of different optimized algorithms that all participate in Approximate Nearest Neighbor (ANN) search.
+    ![alt text](images/vector_db_image.png)
+  - `the first step is to create vector embeddings for the content we want to index.this is done by using an embedding model from LLM providers.`
+  - **The second step indexing is to insert the vector embeddings into vector database. this is done by associating each vector embedding with a reference to the original content that was used to create it.**
+  - `the third step is querying for similar content.done by using same embedding model.`
+
 ### commands & Resources
 
 ```bash
