@@ -34,6 +34,7 @@ pip install -U langchain_experimental
 pip install duckduckgo-search # Search for words, documents, images, news, maps and text translation using the DuckDuckGo.com search engine.
 pip install -q wikipedia
 pip install langchainhub
+pip install -q pinecone
 ```
 
 - Let's explore Langchain a bit - `langchain_deep_dive.ipynb` & then we create the APP in jupyter notebook first & then we will integrate the functions with frontend.
@@ -53,6 +54,7 @@ pip install langchainhub
 - there are two common approaches to measuring relatedness and similarity btw text embeddings - cosine similarity and euclidean distance.
 
 - **Vector Databases**
+
   - One of the biggest challenges of AI Applications is efficient data processing.Many of latest AI applications rely on vector embeddings.which as you know, means converting text to numbers that carry within themselves semantic information.vector embeddings are way of representing text as a set of numbers in a high-dimensional space, and the numbers represent the meanings of the words in the text.
   - we need a database/data store specifically designed to manage such large quantities of data in a numeric representation.we will use pinecone vector db which is designed for storing and querying high dimensional vectors.it provides fast and efficient semantic search over these vector embeddings.
   - Vector databases are a new type of database, designed to store and query unstructured data.Unstructured data is data that does not have a fixed schema, such as text, images, and audio.In vector databases, we apply a similarity metric to find a vector that is the most similar to our query.
@@ -61,6 +63,15 @@ pip install langchainhub
   - `the first step is to create vector embeddings for the content we want to index.this is done by using an embedding model from LLM providers.`
   - **The second step indexing is to insert the vector embeddings into vector database. this is done by associating each vector embedding with a reference to the original content that was used to create it.**
   - `the third step is querying for similar content.done by using same embedding model.`
+
+- **Pinecone**
+  - [pinecone](https://www.pinecone.io/) - The purpose-built vector database delivering relevant results at any scale, designed for LLMs.
+  - to use it, you'll need an API key for authentication.so sign-up & get the default API key and add it to our env file as PINECONE_API_KEY="-----"
+  - Pinecone indexes:
+    - An index is the highest-level organizational unit of vector data in Pinecone.
+    - It accepts and stores vectors, serves queries over the vectors it contains, and does other vector operations over its contents.
+    - `Serverless indexes`: you don't configure or manage any compute or storage resources (they scale automatically).
+    - `Pod-based indexes`: you choose one or more pre-configured units of hardware (pods).
 
 ### commands & Resources
 
